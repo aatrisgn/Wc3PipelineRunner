@@ -54,6 +54,7 @@ namespace Source
 
                 SaveManager.Initialize();
                 new RegionTrigger();
+                new KilJaedenTrigger();
 
 
                 Console.WriteLine("Hello, Azeroth.");
