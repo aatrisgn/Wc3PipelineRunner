@@ -9,16 +9,20 @@ namespace Source.Triggers
     {
         public KilJaedenTrigger()
         {
-            var thisTrigger = trigger.Create();
-
-            //var unitEvent = unitevent.;
-
             PlayerUnitEvents.Register(UnitTypeEvent.Kills, () =>
             {
                 Console.WriteLine("HAHAHA, NO PIPELINE RUN FOR YOU!");
+
+                var some = @event.Unit;
+                var qqwe = @event.KillingUnit;
+
+                Console.WriteLine(some.Name);
+                Console.WriteLine(qqwe);
+
+                Console.WriteLine($"So, did {qqwe.Name} just kill {some.Name}? Pathetic...");
+
             }, FourCC("Nklj"));
 
-            //thisTrigger.RegisterUnitEvent(, unitEvent);
         }
     }
 }
